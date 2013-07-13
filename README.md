@@ -1,4 +1,7 @@
-# Arel::Trigonometry [![Build Status](https://secure.travis-ci.org/jswanner/arel-trigonometry.png?branch=master)](https://travis-ci.org/jswanner/arel-trigonometry)
+# Arel::Trigonometry
+
+[![Build Status](https://secure.travis-ci.org/jswanner/arel-trigonometry.png?branch=master)](https://travis-ci.org/jswanner/arel-trigonometry)
+[![Code Climate](https://codeclimate.com/github/jswanner/arel-trigonometry.png)](https://codeclimate.com/github/jswanner/arel-trigonometry)
 
 Provides trigonometry functions, implemented with Arel.
 
