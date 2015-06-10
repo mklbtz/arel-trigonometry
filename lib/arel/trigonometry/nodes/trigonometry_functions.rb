@@ -12,9 +12,9 @@ module Arel
       SquareRoot
       Tangent
     ].each do |name|
-      const_set name, Class.new(Unary)
+      const_set name, Class.new(Function)
     end
-    Arctangent2 = Class.new(Binary)
-    Pow = Class.new(Binary)
+    Arctangent2 = Class.new(Function)
+    Pow = Class.new(Function)
   end
 end
