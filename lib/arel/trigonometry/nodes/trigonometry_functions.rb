@@ -5,16 +5,19 @@ module Arel
     %w[
       Arcsine
       Arctangent
+      Arctangent2
       Cosine
       CubeRoot
+      Pow
       Radians
       Sine
       SquareRoot
       Tangent
     ].each do |name|
-      const_set name, Class.new(Function)
+      c = const_set name, Class.new(Function)
+      c.send(:include, Arel::Expressions)
+      c.send(:include, Arel::Predications)
+      c.send(:include, Arel::Math)
     end
-    Arctangent2 = Class.new(Function)
-    Pow = Class.new(Function)
   end
 end
