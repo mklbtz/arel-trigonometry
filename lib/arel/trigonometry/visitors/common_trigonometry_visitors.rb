@@ -31,6 +31,10 @@ module Arel
         aggregate "RADIANS", o, collector
       end
 
+      def visit_Arel_Nodes_Round o, collector
+        aggregate "ROUND", o, collector
+      end
+
       def visit_Arel_Nodes_Sine o, collector
         aggregate "SIN", o, collector
       end

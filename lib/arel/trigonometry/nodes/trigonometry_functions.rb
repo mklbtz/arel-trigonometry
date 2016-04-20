@@ -10,6 +10,7 @@ module Arel
       CubeRoot
       Pow
       Radians
+      Round
       Sine
       SquareRoot
       Tangent

@@ -30,6 +30,10 @@ module Arel
       Arel::Nodes::Radians.new([self])
     end
 
+    def round other
+      Arel::Nodes::Round.new([self, other])
+    end
+
     def sin
       Arel::Nodes::Sine.new([self])
     end

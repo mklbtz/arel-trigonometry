@@ -38,6 +38,11 @@ shared_examples 'trigonometry examples' do
     specify { expect(result.to_f).to be_within(threshold).of(Math::PI / 180) }
   end
 
+  context 'round' do
+    let(:function) { Arel::Nodes::Round.new([1.8]) }
+    specify { expect(result.to_f).to be_within(threshold).of(2) }
+  end
+
   context 'sine' do
     let(:function) { Arel::Nodes::Sine.new([1]) }
     specify { expect(result.to_f).to be_within(threshold).of(Math.sin(1)) }
